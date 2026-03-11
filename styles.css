@@ -1,0 +1,120 @@
+/* Main styling */
+.main-header {
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    padding-top: 1rem;
+}
+
+.subheader {
+    font-size: 1.25rem;
+    color: var(--text-color);
+    opacity: 0.8;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 400;
+}
+
+/* Enhanced Background - use theme variables for compatibility */
+.stApp {
+    background-color: var(--background-color);
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(255, 107, 107, 0.05) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(78, 205, 196, 0.05) 0px, transparent 50%);
+    background-attachment: fixed;
+}
+
+/* Glassmorphism Card styling */
+.glass-card {
+    background: color-mix(in srgb, var(--background-color) 80%, transparent);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid color-mix(in srgb, var(--text-color) 10%, transparent);
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Keep original card class for backward compatibility during transition */
+.card {
+    background: color-mix(in srgb, var(--background-color) 80%, transparent);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid color-mix(in srgb, var(--text-color) 10%, transparent);
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+    margin-bottom: 1.5rem;
+}
+
+.card:hover, .glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.1);
+    border-color: color-mix(in srgb, var(--text-color) 20%, transparent);
+}
+
+/* Metric Cards Refactor */
+div[data-testid="stMetric"] {
+    background: color-mix(in srgb, var(--background-color) 60%, transparent);
+    border: 1px solid color-mix(in srgb, var(--text-color) 10%, transparent);
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    transition: all 0.2s ease;
+}
+
+div[data-testid="stMetric"]:hover {
+    border-color: #4ECDC4;
+    box-shadow: 0 6px 20px rgba(78, 205, 196, 0.15);
+}
+
+div[data-testid="stMetricValue"] {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Fix sidebar text color if needed */
+[data-testid="stSidebar"] {
+    border-right: 1px solid color-mix(in srgb, var(--text-color) 5%, transparent);
+}
+
+/* Progress bar container */
+.stProgress > div > div {
+    background-color: #4ECDC4;
+}
+
+/* Primary Button Styling */
+div.stButton > button {
+    background: linear-gradient(135deg, #FF6B6B 0%, #FF8E8B 100%);
+    color: white;
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+}
+
+div.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+    color: white;
+    border-color: transparent;
+}
+
+/* Secondary Button (Advanced Planning) */
+div.stButton:nth-of-type(2) > button {
+    background: linear-gradient(135deg, #4ECDC4 0%, #55E2D9 100%);
+    box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3);
+}
+
+div.stButton:nth-of-type(2) > button:hover {
+    box-shadow: 0 6px 20px rgba(78, 205, 196, 0.5);
+}
