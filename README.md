@@ -1,22 +1,42 @@
 # AI FINANCIAL ADVISOR
-AI Financial Advisor is an intelligent financial planning application that helps users manage their finances more effectively. The system collects user financial data such as income, expenses, savings, debts, and financial goals, and performs financial analysis to evaluate savings rate, debt-to-income ratio, and budgeting efficiency.
-Using Google Gemini 2.0 Flash, the application generates personalized financial advice, including investment suggestions, budgeting improvements, and goal-based savings plans.
-The project is built using Python, Streamlit, and Generative AI, providing a simple and interactive interface where users can visualize their financial health and receive AI-powered recommendations.
+An intelligent conversational financial advisory system that provides personalized budgeting, investment, and goal-planning recommendations based on user inputs.
+This project leverages the power of LLaMA 3.3 70B Versatile via Groq API to deliver fast and structured financial insights in real time
+
 
 Key Features:
 
-AI-powered financial recommendations
-Budget and savings analysis
-Debt-to-income ratio evaluation
-Goal-based financial planning
-Interactive financial dashboard
-Real-time data visualization
-Integration with Google Gemini AI
+Conversational AI-based financial advisor for personalized guidance
+Real-time responses using Groq’s low-latency inference engine
+User-specific financial analysis (income, expenses, savings, debts)
+Goal-based financial planning with actionable steps
+Advanced prompt engineering for structured and sectioned outputs
+Dynamic chatbot for answering financial queries
+Interactive UI built using Streamlit
 
 Tech Stack:
 
-Python
-Streamlit
-Google Gemini AI
-Pandas & NumPy
-Matplotlib / Plotly
+Frontend/UI: Streamlit
+Backend: Python
+LLM Model: LLaMA 3.3 (via Groq API)
+Libraries: Pandas, Matplotlib, Seaborn
+
+How It Works:
+
+User inputs financial details (income, expenses, savings, goals, etc.)
+System performs financial analysis (ratios, savings, net worth)
+Structured prompts are generated based on user profile
+LLaMA 3 processes the data and generates actionable financial plans
+Results are displayed in a clean and interactive UI
+
+Use Cases: 
+
+Personal budgeting and expense tracking
+Goal-based financial planning (e.g., savings, investments)
+Debt management strategies
+Financial education and decision support
+
+
+
+
+
+
